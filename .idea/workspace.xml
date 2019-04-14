@@ -218,9 +218,9 @@
       <path value="$PROJECT_DIR$/vendor/overtrue/laravel-lang" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="835" />
-    <option name="width" value="1120" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="887" />
+    <option name="width" value="1043" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
