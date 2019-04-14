@@ -9,14 +9,14 @@
                         {{ Auth::user()->name }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{route('users.show','Auth::user()')}}">个人中心</a>
+                        <a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">个人中心</a>
                         <a class="dropdown-item" href="#">编辑资料</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" id="logout" href="#">
                             <form action="{{ route('logout') }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
-                                <button class="btn btn-block btn-danger"></button>
+                                <button class="btn btn-block btn-danger">退出登录</button>
                             </form>
                         </a>
                     </div>
