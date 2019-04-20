@@ -47,6 +47,10 @@ class User extends Authenticatable
         });
     }
 
+    public function statuses(){
+        return $this=>$this->hasMany();
+    }
+
     public function gravatar($size = '100'){
         $hash = md5(strtolower(trim($this->attributes['email'])));
         return "http://www.gravatar.com/avatar/$hash?s=$size";
