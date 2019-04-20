@@ -48,7 +48,7 @@ class User extends Authenticatable
     }
 
     public function statuses(){
-        return $this=>$this->hasMany();
+        return $this->hasMany(Status::class);
     }
 
     public function gravatar($size = '100'){
